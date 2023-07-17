@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/imgs/Logo/icon.png">
+    <link rel="stylesheet" href="/normalize/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/transportation.css">
+    <title>Holiday in Egypt | transportation</title>
+</head>
+
+<body>
+
+    <a href="Home.html" class="box-icon">
+        <div><i class="fas fa-long-arrow-alt-left"></i>go to home</div>
+    </a>
+    <div class="main-heading">
+        <h2>cars</h2>
+        <p>We have a good selection of cars that suit your needs and the nature of the place where you are</p>
+    </div>
+
+    <section class="wrapper">
+
+        <i class="fa fa-arrow-left button" id="prev"></i>
+        <div class="image-container">
+            <a href="/html/contact us.html" class="carousel">
+                <img src="/imgs/cars/car-1.webp" alt="" />
+                <img src="/imgs/cars/car-2.webp" alt="" />
+                <img src="/imgs/cars/car-3.webp" alt="" />
+                <img src="/imgs/cars/car-4.webp" alt="" />
+                <img src="/imgs/cars/car-5.jpeg" alt="" />
+                <p>contact us now</p>
+            </a>
+            <i class="fa fa-arrow-right button" id="next"></i>
+        </div>
+    </section>
+
+    <script>
+        // Get the DOM elements for the image carousel
+        const wrapper = document.querySelector(".wrapper"),
+            carousel = document.querySelector(".carousel"),
+            images = document.querySelectorAll("img"),
+            buttons = document.querySelectorAll(".button");
+
+        let imageIndex = 1,
+            intervalId;
+
+        // Define function to start automatic image slider
+        const autoSlide = () => {
+            // Start the slideshow by calling slideImage() every 2 seconds
+            intervalId = setInterval(() => slideImage(++imageIndex), 2000);
+        };
+        // Call autoSlide function on page load
+        autoSlide();
+
+        // A function that updates the carousel display to show the specified image
+        const slideImage = () => {
+            // Calculate the updated image index
+            imageIndex = imageIndex === images.length ? 0 : imageIndex < 0 ? images.length - 1 : imageIndex;
+            // Update the carousel display to show the specified image
+            carousel.style.transform = `translate(-${imageIndex * 100}%)`;
+        };
+
+        // A function that updates the carousel display to show the next or previous image
+        const updateClick = (e) => {
+            // Stop the automatic slideshow
+            clearInterval(intervalId);
+            // Calculate the updated image index based on the button clicked
+            imageIndex += e.target.id === "next" ? 1 : -1;
+            slideImage(imageIndex);
+            // Restart the automatic slideshow
+            autoSlide();
+        };
+
+        // Add event listeners to the navigation buttons
+        buttons.forEach((button) => button.addEventListener("click", updateClick));
+
+        // Add mouseover event listener to wrapper element to stop auto sliding
+        wraspper.addEventListener("mouseover", () => clearInterval(intervalId));
+        // Add mouseleave event listener to wrapper element to start auto sliding again
+        wrapper.addEventListener("mouseleave", autoSlide);
+    </script>
+    <script>
+        // fixed header elements
+        const header = document.querySelector('header');
+        const footer = document.querySelector('footer');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                header.style.position = 'fixed';
+                header.style.top = '0';
+                header.style.left = '0';
+                header.style.width = '100%';
+                header.style.zIndex = '9999';
+                header.style.backgroundColor = '#0000002a';
+
+
+            } else {
+                header.style.position = 'tatic';
+                header.style.backgroundColor = 'transparent';
+
+            }
+
+        });
+        window.addEventListener('load', () => {
+            header.style.backgroundColor = 'transparent';
+        });
+    </script>
+    <script src="/js/Home.js"></script>
+    <script src="/js/translate.js"></script>
+</body>
+
+</html>

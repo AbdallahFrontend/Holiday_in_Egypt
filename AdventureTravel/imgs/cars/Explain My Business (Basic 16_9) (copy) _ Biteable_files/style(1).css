@@ -1,0 +1,17 @@
+/*
+ * http://unifoundry.com/unifont/index.html
+ */
+
+@font-face {
+  font-family: "unifont";
+  src: url("fonts/unifont-13.0.02.woff2") format("woff2"),
+       url("fonts/unifont-13.0.02.woff") format("woff"),
+       url("fonts/unifont-13.0.02.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "unifont-upper";
+  src: url("fonts/unifont_upper-13.0.02.woff2") format("woff2"),
+       url("fonts/unifont_upper-13.0.02.woff") format("woff"),
+       url("fonts/unifont_upper-13.0.02.ttf") format("truetype");
+}

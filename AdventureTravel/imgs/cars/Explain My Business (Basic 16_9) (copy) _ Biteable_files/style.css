@@ -1,0 +1,90 @@
+/*
+ * Legal Disclaimer
+ *
+ * These Fonts are licensed only for use on these domains and their subdomains:
+ * biteable.com
+ *
+ * It is illegal to download or use them on other websites.
+ *
+ * While the @font-face statements below may be modified by the client, this
+ * disclaimer may not be removed.
+ *
+ * Lineto.com, 2018
+ */
+
+@font-face {
+  font-family: "Brown";
+  src: url("fonts/lineto-brown-pro-bold.eot");
+  src: url("fonts/lineto-brown-pro-bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/lineto-brown-pro-bold.woff2") format("woff2"), url("fonts/lineto-brown-pro-bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brown";
+  src: url("fonts/lineto-brown-pro-bolditalic.eot");
+  src: url("fonts/lineto-brown-pro-bolditalic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/lineto-brown-pro-bolditalic.woff2") format("woff2"),
+    url("fonts/lineto-brown-pro-bolditalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Brown";
+  src: url("fonts/lineto-brown-pro-italic.eot");
+  src: url("fonts/lineto-brown-pro-italic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/lineto-brown-pro-italic.woff2") format("woff2"), url("fonts/lineto-brown-pro-italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Brown";
+  src: url("fonts/lineto-brown-pro-light.eot");
+  src: url("fonts/lineto-brown-pro-light.eot?#iefix") format("embedded-opentype"),
+    url("fonts/lineto-brown-pro-light.woff2") format("woff2"), url("fonts/lineto-brown-pro-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brown";
+  src: url("fonts/lineto-brown-pro-lightitalic.eot");
+  src: url("fonts/lineto-brown-pro-lightitalic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/lineto-brown-pro-lightitalic.woff2") format("woff2"),
+    url("fonts/lineto-brown-pro-lightitalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Brown";
+  src: url("fonts/lineto-brown-pro-regular.eot");
+  src: url("fonts/lineto-brown-pro-regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/lineto-brown-pro-regular.woff2") format("woff2"),
+    url("fonts/lineto-brown-pro-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+@font-face {
+  font-family: "Brown";
+  src: url("fonts/lineto-brown-pro-thin.eot");
+  src: url("fonts/lineto-brown-pro-thin.eot?#iefix") format("embedded-opentype"),
+    url("fonts/lineto-brown-pro-thin.woff2") format("woff2"), url("fonts/lineto-brown-pro-thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brown";
+  src: url("fonts/lineto-brown-pro-thinitalic.eot");
+  src: url("fonts/lineto-brown-pro-thinitalic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/lineto-brown-pro-thinitalic.woff2") format("woff2"),
+    url("fonts/lineto-brown-pro-thinitalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+} */

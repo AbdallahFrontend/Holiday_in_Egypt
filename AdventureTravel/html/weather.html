@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/weather.css" />
+    <link rel="icon" href="/imgs/Logo/icon.png">
+    <link rel="stylesheet" href="/normalize/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Holiday in Egypt | weather</title>
+</head>
+
+<body>
+    <div class="App">
+        <div id="app_container">
+            <a href="Home.html" class="box-icon">
+                <div><i class="fas fa-long-arrow-alt-left"></i>go to home</div>
+            </a>
+            <main>
+                <div class="search-container">
+                    <input type="text" placeholder="Search..." class="search-bar" id="location_input" />
+                </div>
+                <div class="container-clock-box">
+                    <div class="caption">the time now</div>
+                    <div id="time-clock"></div>
+
+                </div>
+                <div>
+                    <div class="location-container">
+                        <div class="location" id="location"></div>
+                        <div class="date" id="date"></div>
+                    </div>
+                    <div class="weather-container">
+                        <div class="temperature" id="temperature_current"></div>
+                        <div class="temperature" id="temperature_max_min"></div>
+                        <div class="weather" id="weather"></div>
+                        <div class="weather-desc" id="weather_desc"></div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script>
+        function updateClock() {
+            const clockEl = document.getElementById('time-clock');
+            const time = new Date();
+            const hours = time.getHours();
+            const minutes = time.getMinutes();
+            const seconds = time.getSeconds();
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+            const hourText = hours % 12 > 0 ? hours % 12 : 12;
+            const timeText = `${hourText}:${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds} ${ampm}`;
+            clockEl.innerHTML = timeText;
+        }
+        setInterval(updateClock, 1000);
+        function updateClockByCountry() {
+            var clock = document.getElementById('clock');
+            var time = new Date().toLocaleTimeString("en-US");
+            clock.innerHTML = time;
+        }
+
+        setInterval(updateClockByCountry, 1000);
+        updateClockByCountry();
+    </script>
+    <script src="/js/weather.js" defer></script>
+</body>
+
+</html>

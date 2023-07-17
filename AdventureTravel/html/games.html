@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/imgs/Logo/icon.png">
+    <link rel="stylesheet" href="/normalize/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.goosgleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/games.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="">
+
+
+    <title>Holiday in Egypt | Games</title>
+</head>
+
+<body>
+    <div class="container-x">
+        <div class="gameName">X and O</div>
+
+        <!-- select box -->
+        <div class="select-box">
+            <header>Tic Tac Toe</header>
+            <div class="content">
+                <div class="title">Select which you want to be?</div>
+                <div class="options">
+                    <button class="playerX">Player (X)</button>
+                    <button class="playerO">Player (O)</button>
+                </div>
+                <div class="credit"> <i class="fas fa-exclamation-triangle"></i>Warning: the game is easy</div>
+            </div>
+        </div>
+        <!-- playboard section -->
+        <div class="play-board">
+            <div class="details">
+                <div class="players">
+                    <span class="Xturn">X's Turn</span>
+                    <span class="Oturn">O's Turn</span>
+                    <div class="slider"></div>
+                </div>
+            </div>
+            <div class="play-area">
+                <section>
+                    <span class="box1"></span>
+                    <span class="box2"></span>
+                    <span class="box3"></span>
+                </section>
+                <section>
+                    <span class="box4"></span>
+                    <span class="box5"></span>
+                    <span class="box6"></span>
+                </section>
+                <section>
+                    <span class="box7"></span>
+                    <span class="box8"></span>
+                    <span class="box9"></span>
+                </section>
+            </div>
+        </div>
+        <!-- result box -->
+        <div class="result-box">
+            <div class="won-text"></div>
+            <div class="btn"><button>Replay</button></div>
+        </div>
+    </div>
+    <div class="container elsero">
+        <div class="container-box">
+            <div class="game-info">
+                <div class="game-name">Hangman</div>
+                <div class="category">
+                    Word From: <span></span>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="hangman-draw">
+                    <div class="the-draw">
+                        <div class="the-stand"></div>
+                        <div class="the-hang"></div>
+                        <div class="the-rope"></div>
+                        <div class="the-man">
+                            <div class="head"></div>
+                            <div class="body"></div>
+                            <div class="hands"></div>
+                            <div class="legs"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="letters"></div>
+            </div>
+            <hr>
+            <div class="letters-guess"></div>
+        </div>
+        <audio id="success" src="audio/success.mp4" preload="auto"></audio>
+        <audio id="fail" src="audio/fail.mp4" preload="auto"></audio>
+    </div>
+    <div class="container">
+        <h1>Pong Game</h1>
+        <canvas></canvas>
+        <button id="start-button">Start Game</button>
+        <p>Control the left player by using up and down arrow keys</p>
+    </div>
+    <section class="container cont-thridgam">
+        <div class="result_field">
+            <div class="result_images">
+                <span class="user_result">
+                    <img src="images/rock.png" alt="" />
+                </span>
+                <span class="cpu_result">
+                    <img src="images/rock.png" alt="" />
+                </span>
+            </div>
+            <div class="result">Let's Play!!</div>
+        </div>
+
+        <div class="option_images">
+            <span class="option_image">
+                <img src="/imgs/game/rock.png" alt="" />
+                <p>Rock</p>
+            </span>
+            <span class="option_image">
+                <img src="/imgs/game/paper.png" alt="" />
+                <p>Paper</p>
+            </span>
+            <span class="option_image">
+                <img src="/imgs/game/scissors.png" alt="" />
+                <p>Scissors</p>
+            </span>
+        </div>
+    </section>
+    <!-- game num four -->
+    <div class="wrapperG">
+        <ul class="cards">
+            <li class="card">
+                <div class="view front-view">
+                    <img src="/imgs/game/que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="/imgs/game/img-1.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="/imgs/game/que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="/imgs/game/img-2.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="/imgs/game/que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="/imgs/game/img-3.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="/imgs/game/que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="/imgs/game/img-4.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="/imgs/game/que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="/imgs/game/img-5.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="/imgs/game/que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="/imgs/game/img-6.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="/imgs/game/que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="/imgs/game/img-5.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="/imgs/game/que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="/imgs/game/img-6.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="/imgs/game/que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="/imgs/game/img-1.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="/imgs/game/que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="/imgs/game/img-2.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="/imgs/game/que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="/imgs/game/img-3.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="/imgs/game/que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="/imgs/game/img-4.png" alt="card-img">
+                </div>
+            </li>
+            <div class="details">
+                <p class="time">Time: <span><b>20</b>s</span></p>
+                <p class="flips">Flips: <span><b>0</b></span></p>
+                <button class="refresh">Refresh</button>
+            </div>
+        </ul>
+    </div>
+
+    <script src="/js/games.js" defer></script>
+</body>
+
+</html>
+<!-- 
+    أتري الكود التالي:// Letters
+const letters = "abcdefghijklmnopqrstuvwxyz";
+
+// Get Array From Letters
+let lettersArray = Array.from(letters);
+
+// Select Letters Container
+let lettersContainer = document.querySelector(".letters");
+
+// Generate Letters
+lettersArray.forEach(letter => {
+
+    // Create Span
+    let span = document.createElement("span");
+
+    // Create Letter Text Node
+    let theLetter = document.createTextNode(letter);
+
+    // Append The Letter To Span
+    span.appendChild(theLetter);
+
+    // Add Class On Span
+    span.className = 'letter-box';
+
+    // Append Span To The Letters Container
+    lettersContainer.appendChild(span);
+
+});
+
+// Object Of Words + Categories
+const words = {
+    programming: ["php", "javascript", "go", "scala", "fortran", "r", "mysql", "python"],
+    movies: ["Prestige", "Inception", "Parasite", "Interstellar", "Whiplash", "Memento", "Coco", "Up"],
+    people: ["Albert Einstein", "Hitchcock", "Alexander", "Cleopatra", "Mahatma Ghandi"],
+    Arab_Countries: ["Syria", "Palestine", "Yemen", "Egypt", "Bahrain", "Qatar"],
+    Fruits: ["apple", "banana", "orange", "strawberry", "apricot", "date", "watermelon", "grape"],
+    Vegetables: ["carrots", "celer", "onions", "garlic", "cucumbers", "potatoes", "parsley sauce", "radishes"],
+    Music: ["The Beatles", "Michael Jackson", "Beyonce", "Eminem", "Taylor Swift", "Elvis Presley", "Bob Marley", "Queen"],
+    Sports: ["Football", "Basketball", "Tennis", "Volleyball", "Running", "Cycling", "Golf", "Athletics"],
+    Household_Appliances: ["vacuum cleaner", "hair dryer", "shaver", "dishes", "cutlery set", "blender", "food processor", "dishwasher"],
+    Stationery: ["folder", "scissors", "stapler", "book", "pencil", "pen", "file", "printer"],
+    Foods: ["pizza", "burger", "shawarma", "taco", "sushi", "salad", "cake", "juice"],
+    Colors: ["red", "green", "black", "white", "blue", "yellow", "magential", "violet"]
+
+}
+
+// Get Random Property
+
+let allKeys = Object.keys(words);
+
+// Random Number Depend On Keys Length
+let randomPropNumber = Math.floor(Math.random() * allKeys.length);
+
+// Category
+let randomPropName = allKeys[randomPropNumber];
+
+// Category Words
+let randomPropValue = words[randomPropName];
+
+// Random Number Depend On Words
+let randomValueNumber = Math.floor(Math.random() * randomPropValue.length);
+
+// The Chosen Word
+let randomValueValue = randomPropValue[randomValueNumber];
+
+// Set Category Info
+document.querySelector(".game-info .category span").innerHTML = randomPropName;
+
+// Select Letters Guess Element
+let lettersGuessContainer = document.querySelector(".letters-guess");
+
+// Convert Chosen Word To Array
+let lettersAndSpace = Array.from(randomValueValue);
+
+// Create Spans Depened On Word
+lettersAndSpace.forEach(letter => {
+
+    // Create Empty Span
+    let emptySpan = document.createElement("span");
+
+    // If Letter Is Space
+    if (letter === ' ') {
+
+        // Add Class To The Span
+        emptySpan.className = 'with-space';
+
+    }
+
+    // Append Span To The Letters Guess Container
+    lettersGuessContainer.appendChild(emptySpan);
+
+});
+
+// Select Guess Spans
+let guessSpans = document.querySelectorAll(".letters-guess span");
+
+// Set Wrong Attempts
+let wrongAttempts = 0;
+
+// Select The Draw Element
+let theDraw = document.querySelector(".hangman-draw");
+
+// Handle Clicking On Letters
+document.addEventListener("click", (e) => {
+
+    // Set The Choose Status
+    let theStatus = false;
+
+    if (e.target.className === 'letter-box') {
+
+        e.target.classList.add("clicked");
+
+        // Get Clicked Letter
+        let theClickedLetter = e.target.innerHTML.toLowerCase();
+
+        // The Chosen Word
+        let theChosenWord = Array.from(randomValueValue.toLowerCase());
+
+        theChosenWord.forEach((wordLetter, WordIndex) => {
+
+            // If The Clicked Letter Equal To One Of The Chosen Word Letter
+            if (theClickedLetter == wordLetter) {
+
+                // Set Status To Correct
+                theStatus = true;
+
+                // Loop On All Guess Spans
+                guessSpans.forEach((span, spanIndex) => {
+
+                    if (WordIndex === spanIndex) {
+
+                        span.innerHTML = theClickedLetter;
+
+                    }
+
+                });
+
+            }
+
+        });
+
+        // Outside Loop
+
+        // If Letter Is Wrong
+        if (theStatus !== true) {
+
+            // Increase The Wrong Attempts
+            wrongAttempts++;
+
+            // Add Class Wrong On The Draw Element
+            theDraw.classList.add(`wrong-${wrongAttempts}`);
+
+            // Play Fail Sound
+            document.getElementById("fail").play();
+
+            if (wrongAttempts === 8) {
+
+                endGame();
+
+                lettersContainer.classList.add("finished");
+
+            }
+
+        } else {
+
+            // Play Success Sound
+            document.getElementById("success").play();
+
+        }
+
+    }
+
+});
+
+// End Game Function
+function endGame() {
+
+    // Create Popup Div
+    let div = document.createElement("div");
+
+    // Create Text
+    let divText = document.createTextNode(`Game Over, The Word Is ${randomValueValue}`);
+
+    // Append Text To Div
+    div.appendChild(divText);
+
+    // Add Class On Div
+    div.className = 'popup';
+
+    // Append To The Body
+    document.body.appendChild(div);
+
+
+}
+html:    <div class="container">
+        <div class="container-box">
+            <div class="game-info">
+                <div class="game-name">Hangman</div>
+                <div class="category">
+                    Word From: <span></span>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="hangman-draw">
+                    <div class="the-draw">
+                        <div class="the-stand"></div>
+                        <div class="the-hang"></div>
+                        <div class="the-rope"></div>
+                        <div class="the-man">
+                            <div class="head"></div>
+                            <div class="body"></div>
+                            <div class="hands"></div>
+                            <div class="legs"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="letters"></div>
+            </div>
+            <hr>
+            <div class="letters-guess"></div>
+        </div>
+        <audio id="success" src="audio/success.mp4" preload="auto"></audio>
+        <audio id="fail" src="audio/fail.mp4" preload="auto"></audio>css:* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    margin: 20px auto;
+    width: 1000px
+}
+
+.row {
+    display: flex;
+}
+
+hr {
+    border: 1px solid #EEE;
+}
+
+.game-info {
+    display: flex;
+}
+
+.game-info .game-name {
+    flex: 1;
+}
+
+.game-info .category {
+    flex: 1;
+    text-align: right;
+}
+
+.game-info .category span {
+    text-transform: capitalize;
+    color: #E91E63;
+    font-weight: bold;
+}
+
+.hangman-draw {
+    flex: 1;
+    background-color: #F8F8F8;
+    padding: 20px;
+    height: 324px;
+}
+
+.hangman-draw .the-draw {
+    width: 60px;
+    height: 280px;
+    border-bottom: 4px solid #222;
+    position: relative;
+    margin: auto;
+    left: -60px;
+    display: none;
+}
+
+.hangman-draw .the-stand {
+    position: absolute;
+    width: 4px;
+    background-color: #222;
+    height: 100%;
+    left: 50%;
+    margin-left: -2px;
+    display: none;
+}
+
+.hangman-draw .the-hang {
+    display: none;
+}
+
+.hangman-draw .the-hang:before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    background-color: #222;
+    width: 100px;
+    left: 30px;
+    top: 15px;
+}
+
+.hangman-draw .the-hang:after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 30px;
+    background-color: #222;
+    left: 130px;
+    top: 15px;
+}
+
+.hangman-draw .the-rope {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    left: 95px;
+    top: 45px;
+    border: 4px dashed #222;
+    display: none;
+}
+
+.hangman-draw .the-man .head {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid #222;
+    position: absolute;
+    left: 105px;
+    top: 55px;
+    display: none;
+}
+
+.hangman-draw .the-man .body {
+    position: absolute;
+    background-color: #222;
+    width: 4px;
+    height: 110px;
+    top: 102px;
+    left: 130px;
+    display: none;
+}
+
+.hangman-draw .the-man .hands {
+    display: none;
+}
+
+.hangman-draw .the-man .hands:before {
+    left: 85px;
+    transform: rotate(30deg);
+}
+
+.hangman-draw .the-man .hands:after {
+    left: 130px;
+    transform: rotate(-30deg);
+}
+
+.hangman-draw .the-man .hands:before,
+.hangman-draw .the-man .hands:after {
+    content: '';
+    width: 50px;
+    position: absolute;
+    height: 4px;
+    background-color: #222;
+    top: 140px;
+}
+
+.hangman-draw .the-man .legs {
+    display: none;
+}
+
+.hangman-draw .the-man .legs:before {
+    left: 85px;
+    transform: rotate(-30deg);
+}
+
+.hangman-draw .the-man .legs:after {
+    left: 130px;
+    transform: rotate(30deg);
+}
+
+.hangman-draw .the-man .legs:before,
+.hangman-draw .the-man .legs:after {
+    content: '';
+    width: 50px;
+    position: absolute;
+    height: 4px;
+    background-color: #222;
+    top: 220px;
+}
+
+.hangman-draw.wrong-1 .the-draw {
+    display: block;
+}
+
+.hangman-draw.wrong-2 .the-stand {
+    display: block;
+}
+
+.hangman-draw.wrong-3 .the-hang {
+    display: block;
+}
+
+.hangman-draw.wrong-4 .the-rope {
+    display: block;
+}
+
+.hangman-draw.wrong-5 .head {
+    display: block;
+}
+
+.hangman-draw.wrong-6 .body {
+    display: block;
+}
+
+.hangman-draw.wrong-7 .hands {
+    display: block;
+}
+
+.hangman-draw.wrong-8 .legs {
+    display: block;
+}
+
+.letters {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+}
+
+.letters.finished {
+    pointer-events: none;
+}
+
+.letters .letter-box {
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    background-color: #1877F2;
+    color: #FFF;
+    font-size: 24px;
+    margin-right: 10px;
+    line-height: 55px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.letters .letter-box.clicked {
+    background-color: #222;
+    opacity: .2;
+    pointer-events: none;
+}
+
+.letters-guess {
+    margin: 10px auto;
+    background-color: #F8F8F8;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 104px;
+}
+
+.letters-guess span {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #FDFDFD;
+    border-bottom: 3px solid #222;
+    transition: .3s;
+}
+
+.letters-guess span.with-space {
+    background: none;
+    border-bottom: none;
+    position: relative;
+}
+
+.letters-guess span.with-space:before {
+    content: '';
+    width: 20px;
+    height: 4px;
+    background-color: #222;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup {
+    position: absolute;
+    background-color: #1DA1F2;
+    padding: 100px 20px;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    text-align: center;
+    font-size: 40px;
+    border: 1px solid #CCC;
+    color: #FFF;
+}
+
+#start-button:hover {
+    transform: translate(0px) scale(.98);
+    -webkit-transform: translate(0px) scale(.98);
+    -moz-transform: translate(0px) scale(.98);
+    -ms-transform: translate(0px) scale(.98);
+    -o-transform: translate(0px) scale(.98);
+}
+
+#start-button:active {
+    transform: scale(.95);
+    -webkit-transform: scale(.95);
+    -moz-transform: scale(.95);
+    -ms-transform: scale(.95);
+    -o-transform: scale(.95);
+}
+
+.container {
+    padding: 2rem 7rem;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+    </div> أريد عند أنتهاء اللعبة بالخسارة أو الفوز تبدأ اللعبة من جديد ويكون هناك سكور يحدد نقاط اللاعب و الكلمة الصحيحة بنقطتين والخاطئة بنقطة وإذا المجموع صفر يخسر اللاعب 
+ -->

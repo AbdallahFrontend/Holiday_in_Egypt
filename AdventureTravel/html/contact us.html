@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holiday in Egypt | contact us</title>
+  <link rel="stylesheet" href="/css/contact us.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+
+<body>
+  <a href="Home.html" class="box-icon">
+    <div><i class="fas fa-long-arrow-alt-left"></i>go to home</div>
+  </a>
+  <div class="wrapper">
+    <header>input your date</header>
+    <form action="/php/contact-us.php">
+      <div class="dbl-field">
+        <div class="field">
+          <input type="text" maxlength="30" name="name" placeholder="Enter your name" class="special">
+          <span class="progress"></span>
+          <span class="count"></span>
+          <i class='fas fa-user'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="email" placeholder="Enter your email">
+          <i class='fas fa-envelope'></i>
+        </div>
+      </div>
+      <div class="dbl-field">
+        <div class="field">
+          <input type="text" name="phone" placeholder="Enter your phone">
+          <i class='fas fa-phone-alt'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="website" placeholder="Enter your website">
+          <i class='fas fa-globe'></i>
+        </div>
+      </div>
+      <div class="Number_of_individuals">
+        <div class="caption">Number of individuals</div>
+        <span class="minus">-</span>
+        <span class="num" name="individuals">01</span>
+        <span class="plus">+</span>
+      </div>
+      <div class="message">
+        <textarea placeholder="Write your message" name="message"></textarea>
+        <i class="material-icons">message</i>
+      </div>
+      <div class="button-area">
+        <button type="submit">Send Message</button>
+        <span></span>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    const plus = document.querySelector(".plus"),
+      minus = document.querySelector(".minus"),
+      num = document.querySelector(".num");
+    let a = 1;
+    plus.addEventListener("click", () => {
+      a++;
+      a = (a < 10) ? "0" + a : a;
+      num.innerText = a;
+    });
+    minus.addEventListener("click", () => {
+      if (a > 1) {
+        a--;
+        a = (a < 10) ? "0" + a : a;
+        num.innerText = a;
+      }
+    });
+  </script>
+  <script src="/js/contact-us.js"></script>
+</body>
+
+</html>
